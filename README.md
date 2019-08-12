@@ -7,13 +7,11 @@
 **Don't `npm i` this directly**
 
 ```bash
-$ npm i -g egg-init
-$ egg-init --type mp showcase
-$ cd showcase
-$ npm i
-$ npm run dev
-$ open http://localhost:7001
+$ mkdir tell-demo && cd tell-demo # 初始化项目
+$ npm init tell # 下载脚手架
+$ npm install # 安装模块
+$ npm run dev # 运行项目
+$ open http://localhost:7001 # 打开浏览器
 ```
 
-See [egg-init](https://github.com/eggjs/egg-init) for more detail.
-
+See [create-tell](https://github.com/unclexiao/create-tell) for more detail.
