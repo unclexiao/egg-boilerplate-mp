@@ -12,8 +12,11 @@ module.exports = appInfo => {
    **/
   const config = exports = {};
 
-  // 加密字符串
+  // 签名密钥
   config.keys = appInfo.name + '_{{keys}}';
+
+  // 反向代理
+  config.proxy = true;
 
   // 微信小程序
   config.mp = {
@@ -43,10 +46,10 @@ module.exports = appInfo => {
     },
   };
 
-  // 中间件
+  // 自定义中间件
   config.middleware = [];
 
-  // 用户配置
+  // 自定义用户配置
   const userConfig = {
     myAppName: 'tell-mp',
   };
