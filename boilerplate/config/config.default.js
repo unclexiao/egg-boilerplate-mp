@@ -32,7 +32,7 @@ module.exports = appInfo => {
       host: process.env.EGG_REDIS_HOST || '127.0.0.1', // 主机
       port: process.env.EGG_REDIS_PORT || 6379, // 端口
       password: process.env.EGG_REDIS_PASSWORD || '', // 密码
-      db: process.env.EGG_REDIS_DB || '0', // 数据库
+      db: process.env.EGG_REDIS_DB || '10', // 数据库
     },
   };
 

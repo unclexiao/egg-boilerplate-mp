@@ -2,6 +2,7 @@
   "name": "egg-boilerplate-mp",
   "version": "1.0.2",
   "description": "boilerplate for egg quickstart",
+  "keywords": ["egg", "egg-framework", "egg-boilerplate"],
   "scripts": {
     "autod": "autod",
     "lint": "eslint .",

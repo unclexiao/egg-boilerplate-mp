@@ -11,6 +11,8 @@ module.exports = {
   dep: [
     'egg',
     'egg-scripts',
+    "egg-mp",
+    "egg-tell-basic"
   ],
   devdep: [
     'egg-ci',
@@ -26,4 +28,3 @@ module.exports = {
     './dist',
   ],
 };
-
