@@ -4,11 +4,14 @@
   "description": "{{description}}",
   "private": true,
   "egg": {
-    "declarations": true
+    "declarations": true,
+    "framework": "egg-tell-basic"
   },
   "dependencies": {
     "egg": "^2.15.1",
-    "egg-scripts": "^2.11.0"
+    "egg-scripts": "^2.11.0",
+    "egg-mp": "^1.0.8",
+    "egg-tell-basic": "^1.0.3"
   },
   "devDependencies": {
     "autod": "^3.0.1",
