@@ -1,6 +1,6 @@
 {
   "name": "egg-boilerplate-mp",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "boilerplate for egg quickstart",
   "keywords": ["egg", "egg-framework", "egg-boilerplate"],
   "scripts": {

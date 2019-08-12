@@ -2,22 +2,6 @@
 
 const Service = require('egg').Service;
 class RedisService extends Service {
-    // 返回增加后自增
-    async incr(key) {
-        const val = await this.app.redis.incr(key);
-        return val;
-    }
-
-    // 获取缓存字符串
-    async get(key) {
-        const val = await this.app.redis.get(key);
-        try {
-            return JSON.parse(val);
-        } catch (e) {
-            return val;
-        }
-    }
-
     // 获取缓存数字
     async getNumber(key) {
         const val = await this.app.redis.get(key);
@@ -29,16 +13,6 @@ class RedisService extends Service {
         const val = parseInt(number);
         this.app.redis.set(key, val);
         return val;
-    }
-
-    // 获取第一个
-    async getFirstIndex(key) {
-        return this.app.redis.lpop(key);
-    }
-
-    // 获取最后一个
-    async getEndIndex(key) {
-        return this.app.redis.rpop(key);
     }
 
     // 获取缓存的长度

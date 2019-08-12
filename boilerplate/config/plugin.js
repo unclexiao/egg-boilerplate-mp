@@ -2,7 +2,7 @@
 
 /** @type Egg.EggPlugin */
 module.exports = {
-  mp = {
+  mp: {
     enable: true,
     package: 'egg-mp',
   }

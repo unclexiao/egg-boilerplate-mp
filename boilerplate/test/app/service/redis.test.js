@@ -5,12 +5,18 @@ const {
     assert
 } = require('egg-mock/bootstrap');
 
-describe('test/app/controller/redis.test.js', () => {
+describe('test/app/service/redis.test.js', () => {
     it('should get value', () => {
         const ctx = app.mockContext({});
-        const name = 'tell';
-        await ctx.service.redis.set('name', name);
-        const value = await ctx.service.redis.get(name);
-        assert(value === name);
+        const {
+            redis
+        } = ctx.service;
+        const cv = {
+            key: 'index',
+            value: 520
+        }
+        await redis.setNumber(cv.key, cv.value);
+        const res = await redis.getNumber(cv.key);
+        assert(res === cv.value);
     });
 });
