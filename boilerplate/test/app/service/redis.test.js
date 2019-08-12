@@ -6,7 +6,7 @@ const {
 } = require('egg-mock/bootstrap');
 
 describe('test/app/service/redis.test.js', () => {
-    it('should get value', () => {
+    it('should get value', async () => {
         const ctx = app.mockContext({});
         const {
             redis
