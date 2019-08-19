@@ -5,5 +5,5 @@ module.exports = {
   mp: {
     enable: true,
     package: 'egg-mp',
-  }
+  },
 };

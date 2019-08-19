@@ -14,7 +14,7 @@ module.exports = () => {
   };
 
   // 自定义中间件
-  config.middleware = [];
+  config.middleware = [ 'accessLogger', 'errorHandler', 'userAuth' ];
 
   return config;
 };

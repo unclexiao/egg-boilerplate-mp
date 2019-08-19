@@ -1,0 +1,12 @@
+{
+    "editor.fontSize": 12,
+    "explorer.confirmDelete": false,
+    "files.autoSave": "off",
+    "git.autofetch": true,
+    "git.enableSmartCommit": true,
+    "explorer.confirmDragAndDrop": false,
+    "eslint.enable": true,
+    "eslint.autoFixOnSave": true,
+    "emmet.triggerExpansionOnTab": true,
+    "workbench.iconTheme": "vscode-icons"
+}

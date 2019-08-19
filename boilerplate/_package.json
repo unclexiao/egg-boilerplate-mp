@@ -10,8 +10,8 @@
   "dependencies": {
     "egg": "^2.15.1",
     "egg-scripts": "^2.11.0",
-    "egg-mp": "^1.0.8",
-    "egg-tell-basic": "^1.0.3"
+    "egg-mp": "^1.0.11",
+    "egg-tell-basic": "^1.0.7"
   },
   "devDependencies": {
     "autod": "^3.0.1",

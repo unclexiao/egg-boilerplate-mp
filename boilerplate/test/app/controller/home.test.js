@@ -2,7 +2,7 @@
 
 const {
   app,
-  assert
+  assert,
 } = require('egg-mock/bootstrap');
 
 describe('test/app/controller/home.test.js', () => {

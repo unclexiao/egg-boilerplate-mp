@@ -1,8 +1,12 @@
 {
   "name": "egg-boilerplate-mp",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "boilerplate for egg quickstart",
-  "keywords": ["egg", "egg-framework", "egg-boilerplate"],
+  "keywords": [
+    "egg",
+    "egg-framework",
+    "egg-boilerplate"
+  ],
   "scripts": {
     "autod": "autod",
     "lint": "eslint .",

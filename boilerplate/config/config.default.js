@@ -46,8 +46,13 @@ module.exports = appInfo => {
     },
   };
 
+  // 国际化
+  config.i18n = {
+    defaultLocale: 'zh-CN',
+  };
+
   // 自定义中间件
-  config.middleware = [];
+  config.middleware = [ 'errorHandler', 'userAuth' ];
 
   // 自定义用户配置
   const userConfig = {
