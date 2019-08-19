@@ -1,6 +1,8 @@
 # egg-boilerplate-mp
 
-微信小程序后端模板
+[![npm version](https://badge.fury.io/js/egg-boilerplate-mp.svg)](https://badge.fury.io/js/egg-boilerplate-mp)
+
+微信公众平台后端模板
 
 ## 安装
 
