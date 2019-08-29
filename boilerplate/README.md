@@ -89,11 +89,12 @@ config.i18n = {
 ```
 
 ### 默认插件配置
-- [X] mongoose
-- [X] redis
-- [X] validate
-- [ ] cors
-- [ ] alinode
+- [X] mongoose: 数据库
+- [X] redis: 缓存
+- [X] validate: 表单验证
+- [ ] cors: 跨域设置
+- [ ] alinode: 性能监控
+- [X] mp: 微信公众平台
 
 ## 集成开发环境
 建议使用[VSCode](https://code.visualstudio.com/)，并添加如下扩展

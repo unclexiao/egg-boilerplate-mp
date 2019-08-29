@@ -3,17 +3,10 @@
 module.exports = () => {
   const config = (exports = {});
 
-  // 非关系型数据库
-  config.mongoose = {
-    url: 'mongodb://localhost:27017/teller',
-    options: {
-      useNewUrlParser: true,
-      autoIndex: true,
-      useCreateIndex: true,
-    },
-  };
-
-  // 自定义中间件
+  /**
+  * 启用中间件
+  * @member Config#middleware
+  */
   config.middleware = [ 'errorHandler', 'userAuth' ];
 
   return config;

@@ -15,11 +15,6 @@ class RedisService extends Service {
     return val;
   }
 
-  // 获取缓存的长度
-  async getLength(key) {
-    return this.app.redis.llen(key);
-  }
-
   // 设置缓存对象
   async hashSet(key, val) {
     return this.app.redis.hmset(key, val);
@@ -27,7 +22,8 @@ class RedisService extends Service {
 
   // 取缓存对象的所有值
   async hashGet(key) {
-    return this.app.redis.hgetall(key);
+    const obj = await this.app.redis.hgetall(key);
+    return JSON.stringify(obj) === '{}' ? null : obj;
   }
 
   // 设置过期时间
